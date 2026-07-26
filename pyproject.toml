@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "localgate"
+version = "1.0.0"
+description = "LocalGate: Zero-Trust Package Isolation and In-Memory Module Loader"
+readme = "LICENSE.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "SANGHA1986" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+localgate = "localgate.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+localgate = ["*.md", ".*_rules.json", ".localgate_rules.json", ".safewatch_rules.json"]

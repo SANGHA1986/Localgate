@@ -1,0 +1,14 @@
+LICENSE.md
+pyproject.toml
+src/localgate/.localgate_rules.json
+src/localgate/.safewatch_rules.json
+src/localgate/__init__.py
+src/localgate/cli.py
+src/localgate/finder.py
+src/localgate/packer.py
+src/localgate/security.py
+src/localgate.egg-info/PKG-INFO
+src/localgate.egg-info/SOURCES.txt
+src/localgate.egg-info/dependency_links.txt
+src/localgate.egg-info/entry_points.txt
+src/localgate.egg-info/top_level.txt
