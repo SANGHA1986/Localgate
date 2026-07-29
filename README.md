@@ -54,6 +54,16 @@ localgate pack requests colorama
 localgate run your_script.py
 ```
 
+### Evidence (Demo)
+This is a reproducible local demo result (not a customer case study).
+
+```text
+$ LocalGateCrypto.encrypt/decrypt
+roundtrip True
+cipher_len 84
+tamper_blocked yes
+```
+
 ### License
 BUSL-1.1 Custom. See `LICENSE.md` for commercial restrictions.
 
@@ -103,6 +113,16 @@ pip install -e .
 localgate init
 localgate pack requests colorama
 localgate run your_script.py
+```
+
+### Evidence (데모)
+아래는 실제 고객 사례가 아니라, 로컬에서 재현 가능한 데모 결과입니다.
+
+```text
+$ LocalGateCrypto.encrypt/decrypt
+roundtrip True
+cipher_len 84
+tamper_blocked yes
 ```
 
 ### 라이선스
