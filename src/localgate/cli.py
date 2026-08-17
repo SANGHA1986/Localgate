@@ -63,6 +63,8 @@ Examples:
         print("[*] LocalGate: Bootstrapping security shield...")
         try:
             import localgate
+            # CLI sandbox needs vault ready immediately + zero-trust on
+            localgate.install(lazy=False, block_external=True)
         except Exception as e:
             print(f"[-] LocalGate Bootstrapping failed: {e}", file=sys.stderr)
             sys.exit(1)
